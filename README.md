@@ -10,13 +10,14 @@ In this example we will create a system for entering menu items and their prices
 
 this will be our file structure for this example
 
+```
 -example.py
 -example2.py
 templates/
     -add_item.html
 static/
     -add_item_updated.html
-
+```
 
 example.py
 ```python
