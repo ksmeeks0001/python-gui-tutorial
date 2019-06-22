@@ -1,0 +1,49 @@
+<h1>Kevin&#39;s BBQ</h1>
+<h3>Add Item Form</h3>
+<form> 
+	<tr><th><label for="id_name">Item Name:</label></th><td><input type="text" name="name" required id="id_name"></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input type="number" name="price" step="any" required id="id_price"></td></tr> 
+	<button id="submit">ADD</button>
+</form>
+<ul id='item_list'>
+
+<li>burger</li> 
+
+<li>hotdog</li> 
+
+<li>onion rings</li> 
+
+<li>pizza slice</li> 
+
+<li>test</li> 
+
+<li>test2</li> 
+
+<li>test3</li> 
+
+<li>test4</li> 
+
+<li>jhjh</li> 
+
+<li>5</li> 
+
+<li>done</li> 
+
+</ul>
+<script type='text/javascript' src='/eel.js'></script>
+<script type='text/javascript'>
+	let btn = document.getElementById("submit");
+	btn.onclick = 
+	function add_item(){
+		let item = [
+					document.getElementById('id_name').value,
+					document.getElementById('id_price').value
+					];
+		eel.add_item(item);
+		
+		}
+	
+	
+
+	
+</script>

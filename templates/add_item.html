@@ -1,0 +1,28 @@
+<h1>{{ restaurant }}</h1>
+<h3>Add Item Form</h3>
+<form> 
+	{{ form }} 
+	<button id="submit">ADD</button>
+</form>
+<ul id='item_list'>
+{% for i in menu %}
+<li>{{ i }}</li> 
+{% endfor %}
+</ul>
+<script type='text/javascript' src='/eel.js'></script>
+<script type='text/javascript'>
+	let btn = document.getElementById("submit");
+	btn.onclick = 
+	function add_item(){
+		let item = [
+					document.getElementById('id_name').value,
+					document.getElementById('id_price').value
+					];
+		eel.add_item(item);
+		
+		}
+	
+	
+
+	
+</script>
